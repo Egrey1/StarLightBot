@@ -12,6 +12,7 @@ def first_config():
     deps.PREFIX = ('+', )
     deps.intents = Intents.all()
     deps.TOKEN = getenv('TOKEN')
+    version = '0.1'
 
 async def second_config():
     logging.info('Настройка бота')

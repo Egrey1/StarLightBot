@@ -6,3 +6,4 @@ bot: Bot
 PREFIX: tuple[str] = ('+', )
 intents: Intents
 TOKEN: str
+version: str
