@@ -1,1 +1,0 @@
-from .pingCommand import PingCommand

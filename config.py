@@ -12,10 +12,9 @@ def first_config():
     deps.PREFIX = ('+', )
     deps.intents = Intents.all()
     deps.TOKEN = getenv('TOKEN')
-    version = '0.1'
+    deps.version = '0.2'
 
 async def second_config():
     logging.info('Настройка бота')
-    import cogs
-    cogs.load_extensions()
+    import cogs as _
     logging.info('Расширения/коги успешно загружены')
