@@ -4,7 +4,6 @@ import config
 import logging
 
 config.first_config()
-deps.bot = Bot(command_prefix=deps.PREFIX, intents=deps.intents)
 
 @deps.bot.event
 async def on_ready():

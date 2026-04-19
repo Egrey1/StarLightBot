@@ -11,4 +11,8 @@ async def registration(self, interaction: CommandInteraction):
             ui.TextDisplay('Происходит процесс регистрации, ожидайте!')
         )
     ]
-    await interaction.response.send_message(components=component, flags=MessageFlags(is_components_v2=True), allowed_mentions=AllowedMentions.none())
+    await interaction.response.send_message(
+        components=component, 
+        flags=MessageFlags(is_components_v2=True), 
+        allowed_mentions=AllowedMentions.none()
+    )
